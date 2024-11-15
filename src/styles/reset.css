@@ -1,0 +1,15 @@
+body,
+html {
+   margin: 0;
+   padding: 0;
+}
+
+button,
+a,
+ul,
+li,
+span {
+   color: #111;
+   font-style: normal;
+   text-decoration: none;
+}
