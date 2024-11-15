@@ -1,5 +1,6 @@
 // 메인 오늘날씨 - 현재위치
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined'
+import weatherApi from '../../../api/weather'
 function CurrentLocation() {
    return (
       <>
