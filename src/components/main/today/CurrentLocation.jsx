@@ -19,12 +19,7 @@ function CurrentLocation() {
          {weather ? (
             <div className="current_location">
                <LocationOnOutlinedIcon />
-               {/* 날씨에 따른 아이콘 넣기() */}
-               <p>{weather.main.temp}°C</p>
-               <span>현재 위치: {weather.name}</span>
-               <p>날씨: {weather.weather[0].description}</p>
-               <p>체감 {weather.main.feels_like}</p>
-               <p>습도 {weather.main.humidity}</p>
+               <span>{weather.name}</span>
             </div>
          ) : null}
       </>

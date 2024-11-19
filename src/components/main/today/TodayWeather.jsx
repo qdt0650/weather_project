@@ -1,12 +1,19 @@
+import { MainWeatherBox } from '../../../styles/StyledComponent'
 import CurrentLocation from './CurrentLocation'
-import { MainTodayWeather } from '../../../styles/StyledComponent'
+import CurrentTemperature from './CurrentTemperature'
+import CurrentHumiture from './CurrentHumiture'
+import TodayWeatherCard from './TodayWeatherCard'
+import '../../css/TodayWeather.css'
 
 // 메인 오늘날씨
 function TodayWeather() {
    return (
-      <MainTodayWeather>
+      <MainWeatherBox style={{ width: '55%', marginRight: '2%' }}>
          <CurrentLocation />
-      </MainTodayWeather>
+         <CurrentTemperature />
+         <CurrentHumiture />
+         <TodayWeatherCard />
+      </MainWeatherBox>
    )
 }
 

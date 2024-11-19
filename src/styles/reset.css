@@ -8,7 +8,8 @@ button,
 a,
 ul,
 li,
-span {
+span,
+i {
    color: #111;
    font-style: normal;
    text-decoration: none;

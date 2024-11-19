@@ -1,0 +1,39 @@
+/* 오늘(현재) 날씨 css  */
+.current_location {
+   display: flex;
+   align-items: center;
+}
+.current_location span {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   margin-left: 2px;
+}
+
+.current_temperature {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.current_temperature img {
+   width: 150px;
+}
+.current_temperature span {
+   font-size: 40px;
+   font-weight: 700;
+}
+.current_humiture {
+   display: flex;
+   justify-content: center;
+   margin-top: -25px;
+}
+.current_humiture span {
+   font-size: 13px;
+   font-weight: 500;
+   margin: 0 8px;
+}
+.current_humiture span i {
+   font-size: 13px;
+   font-weight: 400;
+   color: #77777a;
+}
