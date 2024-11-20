@@ -1,0 +1,36 @@
+.week_weather_card .title {
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 25px;
+}
+.week_weather_card .swiper {
+   margin-top: 50px;
+}
+.week_weather_card .swiper-slide {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid #ededed;
+   border-radius: 3px;
+   /* background-color: #f6f6f8; */
+   padding: 15px 0;
+}
+.week_weather_card .swiper-button-prev {
+   left: 0px;
+}
+.week_weather_card .swiper-button-next {
+   right: 0;
+}
+.week_weather_card .swiper-button-prev:after,
+.week_weather_card .swiper-rtl .swiper-button-next:after,
+.week_weather_card .swiper-button-next:after,
+.week_weather_card .swiper-rtl .swiper-button-prev:after {
+   font-size: 25px;
+}
+.week_weather_card .week_day {
+   font-size: 14px;
+}
+.week_weather_card .week_temp span {
+   font-size: 15px;
+   font-weight: 500;
+}

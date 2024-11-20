@@ -1,0 +1,25 @@
+.main_card {
+   display: flex;
+   width: 100%;
+   margin-top: 30px;
+   justify-content: space-between;
+}
+.main_card_item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+   width: calc(100% - 30px);
+   border: 1px solid #ededed;
+   background-color: #fff;
+   border-radius: 7px;
+   height: 250px;
+   padding: 15px;
+}
+.main_card_item:last-child {
+   margin-right: 0;
+}
+.main_card_item img {
+   width: 45px;
+}

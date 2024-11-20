@@ -11,6 +11,7 @@ const weatherSlice = createSlice({
       loading: false,
       error: null,
       weather: null,
+      forecast: null,
    },
    reducers: {},
    extraReducers: (builder) => {

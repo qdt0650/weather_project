@@ -3,12 +3,13 @@ import styled from 'styled-components'
 export const Wrap = styled.div`
    overflow: hidden;
    min-width: ${(props) => props.$minWidth || '1024px'};
+   height: 100vh;
    background-color: #f6f6f8;
    padding-bottom: 50px;
 `
 export const HeadBackColor = styled.div`
    background-color: #ecf7ff;
-   padding: 7px 0;
+   padding: 8px 0;
 `
 export const Content = styled.div`
    max-width: 1300px;
