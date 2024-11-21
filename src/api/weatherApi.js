@@ -12,15 +12,13 @@ export function getLocation() {
 // 현재 날씨
 export async function getWeather() {
    try {
-      // 위도 경도
-
       const position = await getLocation()
       const lat = position.coords.latitude
-      const lon = position.coords.longitude
-      console.log('위도', lat)
-      console.log('경도', lon)
+      const lng = position.coords.longitude
+      // console.log('위도', lat)
+      // console.log('경도', lng)
 
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=kr`)
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric&lang=kr`)
       return response.data
    } catch (error) {
       console.error(`API 요청 오류: ${error.message}`)
@@ -31,15 +29,21 @@ export async function getWeather() {
 // 5일치 날씨
 export async function getWeekWeather() {
    try {
-      // 위도 경도
-
       const position = await getLocation()
       const lat = position.coords.latitude
-      const lon = position.coords.longitude
-      console.log('위도', lat)
-      console.log('경도', lon)
+      const lng = position.coords.longitude
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric&lang=kr`)
+      return response.data
+   } catch (error) {
+      console.error(`API 요청 오류: ${error.message}`)
+      throw error
+   }
+}
 
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=kr`)
+// 카카오맵 날씨
+export async function getMapWeather(lat, lng) {
+   try {
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric&lang=kr`)
       return response.data
    } catch (error) {
       console.error(`API 요청 오류: ${error.message}`)
