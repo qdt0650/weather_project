@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import { getMapWeather } from '../api/weatherApi'
 
-export const fetchMapWeather = createAsyncThunk('weather/fetchMapWeather', async ({ lat, lng }) => {
+export const fetchMapWeather = createAsyncThunk('sun/fetchMapWeather', async ({ lat, lng }) => {
    return await getMapWeather(lat, lng)
 })
 
@@ -10,7 +10,7 @@ const sunSlice = createSlice({
    initialState: {
       loading: false,
       error: null,
-      weather: null,
+      sun: null,
    },
    reducers: {},
    extraReducers: (builder) => {

@@ -86,6 +86,14 @@ function SunMap() {
 
          function makeOverListener(map, marker, infowindow) {
             return function () {
+               const lat = marker.getPosition().getLat()
+               const lng = marker.getPosition().getLng()
+               dispatch(fetchMapWeather({ lat, lng }))
+               if (sun) {
+                  infowindow.setContent(`일출: ${sun.sys.sunrise}, 일몰: ${sun.sys.sunset}`)
+               } else {
+                  infowindow.setContent('ㄴㄴㄴ')
+               }
                infowindow.open(map, marker)
             }
          }

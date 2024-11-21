@@ -43,7 +43,7 @@ export async function getWeekWeather() {
 // 카카오맵 날씨
 export async function getMapWeather(lat, lng) {
    try {
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric&lang=kr`)
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}&units=metric&lang=kr`)
       return response.data
    } catch (error) {
       console.error(`API 요청 오류: ${error.message}`)
