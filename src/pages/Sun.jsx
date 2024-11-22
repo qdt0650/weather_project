@@ -1,5 +1,6 @@
 import Header from '../components/Header'
 import SunMap from '../components/sun/SunMap'
+import SunTimeList from '../components/sun/SunTimeList'
 import { Wrap, Content } from '../styles/StyledComponent'
 
 function Sun() {
@@ -9,6 +10,7 @@ function Sun() {
             <Header />
             <Content>
                <SunMap />
+               <SunTimeList />
             </Content>
          </Wrap>
       </>

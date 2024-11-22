@@ -1,0 +1,23 @@
+.sun_map {
+   margin-top: 40px;
+}
+.sun_info {
+   padding: 5px;
+}
+.sun_info span {
+   display: block;
+   font-size: 12px;
+}
+.suntime_list ul li {
+   margin-bottom: 10px;
+}
+.suntime_list ul li span {
+   font-size: 14px;
+}
+.suntime_list .city_name {
+   display: block;
+   font-weight: 600;
+}
+.suntime_list .city_sunrise {
+   margin-right: 10px;
+}

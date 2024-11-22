@@ -23,3 +23,11 @@
 .main_card_item img {
    width: 45px;
 }
+.main_card_item p {
+   font-size: 15px;
+   font-weight: 500;
+}
+.main_card_item p span {
+   display: block;
+   text-align: center;
+}
